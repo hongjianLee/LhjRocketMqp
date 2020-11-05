@@ -9,7 +9,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <relativePath>../lhj-parent/pom.xml</relativePath>
   </parent>
-  <name>LhjDemo</name>
+  <name>LhjRocketMqp</name>
   <groupId>com.lhj</groupId>
   <artifactId>LhjRocketMqp</artifactId>
   <version>1.0.0-SNAPSHOT</version>

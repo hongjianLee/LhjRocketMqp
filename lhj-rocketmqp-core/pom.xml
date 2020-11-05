@@ -11,7 +11,7 @@
     <groupId>com.lhj</groupId>
     <artifactId>lhj-rocketmqp-core</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>lhj-core</name>
+    <name>lhj-rocketmqp-core</name>
     <description>消息队列提供者</description>
 
 </project>
