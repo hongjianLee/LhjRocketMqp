@@ -43,7 +43,8 @@ public class MqProducerService implements IMqProducerService {
         try {
             String getRequestData = "接收到的消息是   Topic=" + topic + " Tags= " + tags + " body= " + body;
             log.debug(getRequestData);
-            String destination = topic.concat(SymbolConstants.COLON).concat(tagPrefix).concat(tags);
+//            String destination = topic.concat(SymbolConstants.COLON).concat(tagPrefix).concat(tags);
+            String destination = topic.concat(SymbolConstants.COLON).concat(tags);
             SendResult sendResult = rocketMQTemplate.syncSend(destination, body);
             log.debug("响应的数据是：" + sendResult);
             if (null != sendResult) {
