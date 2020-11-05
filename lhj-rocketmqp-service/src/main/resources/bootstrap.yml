@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: rocketmqp
+  profiles:
+    active: dev
+---
+spring:
+  profiles: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.1.90:8848
+      config:
+        namespace: 9c0ba88b-9d15-4ed9-903e-9461b2dc5234
+        server-addr: 192.168.1.90:8848
+        group: DEFAULT_GROUP
+        file-extension: yml
+        enabled: true
+        encode: UTF-8
+        shared-configs: base.yml
+
+#rocketmqp-dev.yml
+#server:
+#  port: 8005
+#dubbo:
+#  scan:
+#    base-packages: com.lhj.serviceImpl
+#  application:
+#    name: rocketmqp
+#rocketmq:
+#  tag:
+#    prefix:
+#  name-server: 39.105.162.102:9876
+#  producer:
+#    group: LhjMQProducerGroup
+#    sendMessageTimeout: 300000
